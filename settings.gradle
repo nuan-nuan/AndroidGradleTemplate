@@ -1,7 +1,4 @@
-rootProject.name = 'AndroidGradleTemplate'
+rootProject.name = 'android-gradle-java-template'
 
-include ':Example-AllLibraries'
-include ':Example-Mockito'
-include ':Example-Robolectric'
-include ':Example-RobolectricEasyMockPowerMock'
-include ':Example-RobolectricFlavors'
+include ':app'
+include ':test-lib'

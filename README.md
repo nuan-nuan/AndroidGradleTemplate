@@ -1,4 +1,4 @@
-AndroidGradleTemplate [![Status](https://travis-ci.org/jaredsburrows/AndroidGradleTemplate.svg?branch=master)](https://travis-ci.org/jaredsburrows/AndroidGradleTemplate) [![Coverage Status](https://coveralls.io/repos/jaredsburrows/AndroidGradleTemplate/badge.svg?branch=master)](https://coveralls.io/r/jaredsburrows/AndroidGradleTemplate?branch=master)
+android-gradle-java-template [![Status](https://travis-ci.org/jaredsburrows/android-gradle-java-template.svg?branch=master)](https://travis-ci.org/jaredsburrows/android-gradle-java-template) [![Coverage Status](https://coveralls.io/repos/jaredsburrows/android-gradle-java-template/badge.svg?branch=master)](https://coveralls.io/r/jaredsburrows/android-gradle-java-template?branch=master)
 =========
 Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock + JaCoCo
 
@@ -11,38 +11,38 @@ Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock 
 
 ## Technologies used:
 #### Build Tools:
-|Name|Version|Description|
-|---|---|---|
-| [Gradle](http://gradle.org/docs/current/release-notes) | 2.4 | Gradle build system |
-| [Android Gradle Build Tools](http://tools.android.com/tech-docs/new-build-system) | 1.2.3 | Official Gradle Plugin |
-| [Android SDK](http://developer.android.com/tools/revisions/platforms.html#5.1) | 22 | Official SDK |
-| [Android SDK Build Tools](http://developer.android.com/tools/revisions/build-tools.html) | 22.0.1 | Official Build Tools |
-| [Android Studio](http://tools.android.com/recent) or | 1.2+ | Official IDE |
-| [Intellij](https://www.jetbrains.com/idea/download/) | 14.1.3+ | Intellij IDE |
+|Name|Description|
+|---|---|
+| [Gradle](http://gradle.org/docs/current/release-notes) | Gradle build system |
+| [Android Gradle Build Tools](http://tools.android.com/tech-docs/new-build-system) | Official Gradle Plugin |
+| [Android SDK](http://developer.android.com/tools/revisions/platforms.html#5.1) | Official SDK |
+| [Android SDK Build Tools](http://developer.android.com/tools/revisions/build-tools.html) | Official Build Tools |
+| [Android Studio](http://tools.android.com/recent) or | Official IDE |
+| [Intellij](https://www.jetbrains.com/idea/download/) | Intellij IDE |
 
 ####Android Libraries:
-|Name|Version|Description|
-|---|---|---|
-| [Android Support-v4 ](http://developer.android.com/tools/support-library/features.html#v4) | 22.0.1 | Support Library API 4+|
-| [Android AppCompat-v7](http://developer.android.com/tools/support-library/features.html#v7-appcompat) | 22.0.1 | Support Library API 7+|
-| [Android Google Play Services](https://developer.android.com/google/play-services/index.html) | 7.3.0 | Admob, Analytics, etc
+|Name|Description|
+|---|---|
+| [Android Support-v4 ](http://developer.android.com/tools/support-library/features.html#v4) | Support Library API 4+|
+| [Android AppCompat-v7](http://developer.android.com/tools/support-library/features.html#v7-appcompat) | Support Library API 7+|
+| [Android Google Play Services](https://developer.android.com/google/play-services/index.html) | Admob, Analytics, etc
 
 ####Testing Frameworks:
-|Name|Version|Description|
-|---|---|---|
-| [JUnit](https://github.com/junit-team/junit) | 4.12 | Java Unit Testing Framework |
-| [Hamcrest](https://github.com/hamcrest/JavaHamcrest) | 1.3 | Matchers for Unit Tests |
-| [Espresso](https://code.google.com/p/android-test-kit/wiki/Espresso) | 2.1 | Google's *New* Instrumentation Framework |
-| [Robolectric](https://github.com/robolectric/robolectric) | 3.0-RC3 | Unit Testing Framework |
-| [Mockito](https://github.com/mockito/mockito) | 1.10.19 | Mocking Framework |
-| [EasyMock](https://github.com/easymock/easymock) | 3.3.1 | Mocking Framework |
-| [PowerMock](https://github.com/jayway/powermock) | 1.6.2 | Mocking Framework(static method support) |
+|Name|Description|
+|---|---|
+| [JUnit](https://github.com/junit-team/junit) | Java Unit Testing Framework |
+| [Hamcrest](https://github.com/hamcrest/JavaHamcrest) | Matchers for Unit Tests |
+| [Espresso](https://google.github.io/android-testing-support-library/) | Google's *New* Instrumentation Framework |
+| [Robolectric](https://github.com/robolectric/robolectric) | Unit Testing Framework |
+| [Mockito](https://github.com/mockito/mockito) | Mocking Framework |
+| [EasyMock](https://github.com/easymock/easymock) | Mocking Framework |
+| [PowerMock](https://github.com/jayway/powermock) | Mocking Framework(static method support) |
 
 ####Reporting Plugins:
-|Name|Version|Description|
-|---|---|---|
-| [JaCoCo](http://www.eclemma.org/jacoco/) | 0.7.4.201502262128 | JaCoCo Test Coverage |
-| [Coveralls](https://coveralls.io/) | N/A | Hosts test reports published from TravisCI |
+|Name|Description|
+|---|---|
+| [JaCoCo](http://www.eclemma.org/jacoco/) | JaCoCo Test Coverage |
+| [Coveralls](https://coveralls.io/) | Hosts test reports published from TravisCI |
 
 ####Continuous Integration:
 |Name|Description|
@@ -50,21 +50,17 @@ Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock 
 | [TravisCI](http://docs.travis-ci.com/user/languages/android/) | Build Server(Builds, Tests, Publishes reports to Coveralls) |
 
 ####Publishing to Google Play:
-|Name|Version|Description|
-|---|---|---|
-| [Gradle-play-publisher](https://github.com/Triple-T/gradle-play-publisher) | 1.1.0 | Publishes your app to Google Play |
+|Name|Description|
+|---|---|
+| [Gradle-play-publisher](https://github.com/Triple-T/gradle-play-publisher) | Publishes your app to Google Play |
 
 # Getting Started:
- - [View JUnit and Hamcrest Tests](Example-AllLibraries/src/test/java/burrows/apps/example/template/util/AdUtilsTest.java)
- - [View Robolectric Activity Tests](Example-AllLibraries/src/test/java/burrows/apps/example/template/activity/MainActivityTest.java)
- - [View Robolectric Fragment Tests](Example-AllLibraries/src/test/java/burrows/apps/example/template/fragment/PlaceHolderFragmentTest.java)
- - [View EasyMock/PowerMock Tests](Example-AllLibraries/src/test/java/burrows/apps/example/template/util/PlayServicesUtilsTest.java)
 
 ## `Android Studio` or `Intellij` Support(Simple):
  - **Import/Open this project with Android Studio/Intellij(click on `build.gradle`)**
 
  - **Instrumentation Tests:**
-  - Change the Build Varient Test Artifact to `Instrumentation Tests` 
+  - Change the Build Variant Test Artifact to `Instrumentation Tests` 
   - Right click an instrumentation test located in `src/main/androidTest` and click test
 
  - **Unit Tests:**
@@ -73,7 +69,7 @@ Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock 
 
 ## Comand Line(Advanced):
 ##### Clone with `Git`:
- - `git clone https://github.com/jaredsburrows/AndroidGradleTemplate.git`
+ - `git clone https://github.com/jaredsburrows/android-gradle-java-template.git`
  - `cd AndroidGradleTemplate`
 
 ##### Installing/Running with `Gradle`:
@@ -85,6 +81,8 @@ Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock 
 ##### Running Instrumentation/Espresso Tests with `Gradle`:
  - **Run all instrumentation tests in all `flavors`:**
    - `gradlew connectedAndroidTest`
+ - **Run all instrumentation `debug flavor` tests:**
+   - `gradlew connectedDebugAndroidTest`
  
 ##### Running Unit Tests with `Gradle`:
  - **Run all unit tests in all `flavors`:**
@@ -96,12 +94,12 @@ Gradle + Android Studio + Robolectric + Espresso + Mockito + EasyMock/PowerMock 
  - **Run a single unit test in the `debug flavor`:**
    - `gradlew testDebug --tests="*MainActivityTest*"`
  - **Run a single unit test in the `debug flavor` with `Jacoco` test reports:**
-   - `gradlew testDebug --tests="*MainActivityTest*" jacocoTestReport`
+   - `gradlew testDebug --tests="*MainActivityTest*" jacocoDebugReport`
 
 License
 =========
 
-    Copyright (C) 2015 AndroidGradleTemplate by Jared Burrows
+    Copyright (C) 2015 android-gradle-java-template by Jared Burrows
    
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
